@@ -1,0 +1,15 @@
+app.set('views', './views')
+app.set('view engine', 'pug')
+
+index.pug
+
+html
+  head
+    title= title
+  body
+    h1= message
+
+
+app.get('/', function (req, res) {
+  res.render('index', { title: 'Hey', message: 'Hello there!' })
+})
