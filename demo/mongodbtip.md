@@ -6,6 +6,9 @@ mongodb使用
 ## 启动
 mongod --dbpath /Users/wikipeng/Documents/data/db
 
+## bower使用
+bower install bootstrap
+
 
 ## post表单
 http://stackoverflow.com/questions/4295782/how-do-you-extract-post-data-in-node-js
