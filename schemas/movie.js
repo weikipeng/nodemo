@@ -9,7 +9,7 @@ var MovieSchema = new mongoose.Schema({
   flash:String,
   poster:String,
   year:Number,
-  meta{
+  meta:{
     createAt:{
       type:Date,
       default:Date.now()
@@ -25,7 +25,7 @@ MovieSchema.pre('save',function(next){
   if(this.isNew){
     this.meta.createAt = this.meta.updateAt = Date.now()
   }else{
-    this.mete.updateAt = Date.now()
+    this.meta.updateAt = Date.now()
   }
 
   next()
@@ -36,7 +36,7 @@ MovieSchema.statics = {
     return this
     .find({})
     .sort('meta.updateAt')
-    exec(cb)
+    .exec(cb)
   },
   findById:function(id,cb){
     return this
