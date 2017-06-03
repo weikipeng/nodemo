@@ -17,5 +17,11 @@
     "mongoose": "^4.10.0",
     "pug": "^2.0.0-rc.1",
     "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-nodemon": "^0.4.2"
   }
 }
